@@ -1,3 +1,29 @@
+html {
+    scroll-behavior: smooth;
+  }
+
+::-webkit-scrollbar {
+    width: 20px;
+}
+  
+::-webkit-scrollbar-track {
+    box-shadow: inset 0 0 5px grey;
+    border-radius: 10px;
+}
+  
+::-webkit-scrollbar-thumb {
+    background: rgba(66, 27, 207, 0.336);
+    transition: background 1s;
+
+    border-radius: 10px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+    background: rgba(23, 1, 104, 0.336);
+    transition: background 1s;
+}
+
+
 body {
     margin: 0;
     padding: 0;
@@ -42,26 +68,31 @@ body {
 }
 
 .hero-image {
-    position: relative; /* Ensures the text is positioned relative to this container */
+    position: relative; 
     padding: 0;
     margin: 0;
     text-align: center;
 }
 
     .hero-image img {
-        width: 100%; /* Stretches across the full width */
-        height: auto; /* Maintains aspect ratio */
+        width: 100%; 
+        height: auto; 
         filter: brightness(40%);
     }
 
 .centered-text {
-    position: absolute; /* Allows positioning within the parent container */
-    top: 50%; /* Centers vertically */
-    left: 30%; /* Centers horizontally */
-    transform: translate(-50%, -50%); /* Aligns based on the center point */
-    color: white; /* Text color for visibility */
-    font-size: 24px; /* Adjust as needed */
-    text-align: center; /* Keeps text centered */
+    position: absolute; 
+    top: 50%; 
+    left: 30%;
+    transform: translate(-50%, -50%); 
+    color: white;
+    font-size: 24px;
+    text-align: center; 
+
+}
+
+#span-t {
+    font-size: 20px;
 }
 
 .centered-text > #GetIt {
@@ -70,12 +101,14 @@ body {
     border-radius: 10px;
     background-color: rgb(3, 255, 0);
     border: 2px solid green;
-    -webkit-text-stroke: 1px rgb(70, 70, 70);
+    -webkit-text-stroke: 1px rgb(87, 97, 90);
     font-size: 28px;
     font-weight: bold;
     color: white;
     position: absolute;
     left: 0%;
+    box-shadow: inset 0 0 10px grey;
+
 }
 
 .centered-text > #Github {
@@ -90,8 +123,70 @@ body {
     color: white;
     position: absolute;
     left: 25%;
+    box-shadow: inset 0 0 10px grey;
 }
 
 .content {
-    padding: 20px;
+    color: white;
+    padding-top: 80px;
+    padding-bottom: 650px;
+    padding-left: 30px;
+    background: rgb(0,0,0);
+    background: linear-gradient(135deg, #0a1a3a, #1a1a1a, #4a0a52);
+
+}
+
+.centered-text > #Github:hover {
+    background: rgba(0, 128, 0, 0.726);
+    transition: background 0.5s;
+}
+
+.centered-text > #Github:not(:hover) {
+    background: rgb(255, 255, 255, 0.2);
+    transition: background 1s;
+}
+
+
+.centered-text > #GetIt:hover {
+    background: linear-gradient(135deg, #66ff66, #33cc33);
+    transition: background 1s ease-in-out;
+}
+
+.centered-text > #GetIt:not(:hover) {
+    background: rgb(4, 255, 0);
+    transition: background 0s ease-in-out;
+}
+
+.icon-large {
+    float: right;
+    position: relative;
+    top:-550px;
+    left: 800px;
+}
+
+#content-text {
+    font-size: 24px;
+}
+
+#about {
+    font-size: 72px;
+}
+
+#credit {
+    position: relative;
+    top:625px;
+    left: -825px;
+    text-align: center;
+    text-align-last: center;
+    font-size: 24px;
+}
+
+
+.content2 {
+    position: absolute;
+    top: 300px;
+    color: white;
+    background: rgb(0,0,0);
+    background: linear-gradient(270deg, #0a1a3a, #1a1a1a, #4a0a52);
+
 }
