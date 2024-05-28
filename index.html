@@ -3,6 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <title>Crystal Development - Operating System</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="index.css">
     <link rel="stylesheet" href="roboto-setup.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -10,10 +11,11 @@
     <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
 </head>
 <body>
+
     <nav class="navbar">
         <div class="brand">
             <img src="icon.png" alt="Crystal Development Icon" class="icon">
-            <span id="span-t" class="roboto-regular">Crystal Development</span>
+            <h1 id="span-t">Crystal Development</h1>
         </div>
         <div class="nav-links">
             <a href="#">Home</a>
@@ -29,7 +31,7 @@
         <div class="centered-text">
             <h2>Experience peak computing. Experience CrystalOS Alpha</h2>
             <button id="GetIt" onclick="document.location='#download'">Get it today!</button>
-            <button id="Github" target="_blank" onclick="document.location='https://github.com/'">Check it on GitHub</button>
+            <button id="Github" onclick="window.open('https://github.com/CrystalOSDevelopment/CrystalOS_Alpha', '_blank');">Check it on GitHub</button>
         </div>
     </div>
 
@@ -43,6 +45,94 @@
         <img src="icon.png" alt="Crystal Development Icon" class="icon-large">
     </div>
     
+    <div class="content2">
+        <a class="roboto-bold" id="features">Features<br></a>
+        <div class="container">
+            <div class="image">
+                <img src="/assets/Calculator.bmp" class="logo"> 
+            </div>
+            <div class="text">
+              <h1>A calculator.</h1>
+            </div>
+        </div>
+        <div class="container">
+            <div class="image">
+                <img src="/assets/Gameboy.bmp" class="logo"> 
+            </div>
+            <div class="text">
+              <h1>A gameboy emulator.</h1>
+            </div>
+        </div>
+        <div class="container">
+            <div class="image">
+                <img src="/assets/IDE.bmp" class="logo"> 
+            </div>
+            <div class="text">
+              <h1>An IDE for programmers.</h1>
+            </div>
+        </div>
+        <div class="container">
+            <div class="image">
+                <img src="/assets/WebBrowser.bmp" class="logo"> 
+            </div>
+            <div class="text">
+              <h1>A Web Browser.</h1>
+            </div>
+        </div>
+        <div class="container">
+            <div class="image">
+                <img src="/assets/CrystalMusic.bmp" class="logo"> 
+            </div>
+            <div class="text">
+              <h1>A music player.</h1>
+            </div>
+        </div>
+        <div class="container">
+            <div class="image">
+                <img src="/assets/CrystalVideo.bmp" class="logo"> 
+            </div>
+            <div class="text">
+              <h1>A video player.</h1>
+            </div>
+        </div>
+        <div class="container">
+            <div class="image">
+                <img src="/assets/Minecraft_–_Volume_Alpha.jpeg" class="logo"> 
+            </div>
+            <div class="text">
+              <h1>Minecraft! Well... Kinda.</h1>
+            </div>
+        </div>
+        <div class="container">
+            <div class="image">
+                <img src="/assets/Explorer.bmp" class="logo"> 
+            </div>
+            <div class="text">
+              <h1>A file explorer.</h1>
+            </div>
+        </div>
+        
+    </div>
 
+    <div class="content">
+        <div class="center"> 
+            <img src="icon.png" id="download" alt="Crystal Development Icon"> 
+            <h1 class="roboto-black" id="download-t">CrystalOS</h1>
+            <button id="download-button" class="roboto-regular" onclick="document.location='#download'">Download ISO</button></div>
+    </div>
+    
+    <div class="content3">
+        <hr id="contact" width="60px">
+        <div class="center"><img src="icon.png" alt="Crystal Development Icon" class="icon">
+            <h1>Crystal Development</h1></div>
+        
+        
+        <h1 class="roboto-bold" id="about"></h1>
+        <div class="icons">
+        <a href="https://discord.gg/eUFJyg4vPq" target="_blank"><img src="https://uxwing.com/wp-content/themes/uxwing/download/brands-and-social-media/discord-white-icon.png" class="dscicon"></a>
+        <a href="https://www.youtube.com/@crystaldevelopment4112" target="_blank"><img src="https://cdn.icon-icons.com/icons2/509/PNG/512/YouTube_icon-icons.com_49934.png" class="dscicon" id="invert"></a>
+    </div>
+    </div>
+    
 </body>
 </html>
