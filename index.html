@@ -2,36 +2,48 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>Crystal Development - Operating System</title>
-    <link rel="stylesheet" href="index.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cursor Position Tracker</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            height: 100vh;
+            margin: 0;
+            background-color: #f0f0f0;
+        }
+        #output {
+            margin-top: 20px;
+            padding: 10px;
+            border: 1px solid #ccc;
+            background-color: #fff;
+            border-radius: 5px;
+            width: 200px;
+            text-align: center;
+        }
+    </style>
 </head>
 <body>
-    <nav class="navbar">
-        <div class="brand">
-            <img src="icon.png" alt="Crystal Development Icon" class="icon">
-            <span>Crystal Development</span>
-        </div>
-        <div class="nav-links">
-            <a href="#home">Home</a>
-            <a href="#about">About</a>
-            <a href="#features">Features</a>
-            <a href="#download">Download</a>
-            <a href="#contact">Contact</a>
-        </div>
-    </nav>
 
-    <div class="hero-image">
-        <img src="image.png" alt="CrystalOS Alpha">
-        <div class="centered-text">
-            <h2>Experience peak computing. Experience CrystalOS Alpha</h2>
-            <button id="GetIt">Get it today!</button>
-            <button id="Github">Check it on GitHub</button>
-        </div>
-    </div>
+    <h1>Click anywhere to get cursor position!</h1>
+    <div id="output">X: 0, Y: 0</div>
 
-    <div class="content">
+    <script>
+        // Function to update cursor position on click
+        function updateCursorPosition(event) {
+            // Get the X and Y position of the cursor
+            const x = event.clientX;
+            const y = event.clientY;
 
-    </div>
+            // Display the cursor position in the output div
+            document.getElementById('output').textContent = `X: ${x}, Y: ${y}`;
+        }
 
+        // Add click event listener to the whole document
+        document.addEventListener('click', updateCursorPosition);
+    </script>
 </body>
 </html>
