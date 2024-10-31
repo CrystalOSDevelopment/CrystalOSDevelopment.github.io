@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cursor Position Tracker</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            height: 100vh;
+            margin: 0;
+            background-color: #f0f0f0;
+        }
+        #output {
+            margin-top: 20px;
+            padding: 10px;
+            border: 1px solid #ccc;
+            background-color: #fff;
+            border-radius: 5px;
+            width: 200px;
+            text-align: center;
+        }
+    </style>
+</head>
+<body>
+
+    <h1>Click anywhere to get cursor position!</h1>
+    <div id="output">X: 0, Y: 0</div>
+
+    <script>
+        // Function to update cursor position on click
+        function updateCursorPosition(event) {
+            // Get the X and Y position of the cursor
+            const x = event.clientX;
+            const y = event.clientY;
+
+            // Display the cursor position in the output div
+            document.getElementById('output').textContent = `X: ${x}, Y: ${y}`;
+        }
+
+        // Add click event listener to the whole document
+        document.addEventListener('click', updateCursorPosition);
+    </script>
+</body>
+</html>
