@@ -146,6 +146,10 @@ footer > div > div > ul > li > a:hover{
     font-weight: bold;
 }
 
+.HideUnlessMobile{
+    display: none;
+}
+
 /* Media Queries for Responsiveness */
 @media (max-width: 768px) {
     body {
@@ -232,8 +236,13 @@ footer > div > div > ul > li > a:hover{
     }
 
     .Detail > div{
-        width: 45%;
+        width: 100%;
         text-align: center;
+    }
+
+    .Detail > div > img{
+        align-items: center;
+        display: inline-flex;
     }
 
     .RightImage{
@@ -257,5 +266,16 @@ footer > div > div > ul > li > a:hover{
     .Detail > .ExcludeVideoCard > iframe{
         width: 100%;
         height: 300px;
+    }
+
+    .Detail > img{
+        display: none;
+    }
+
+    .HideUnlessMobile{
+        display: block;
+        margin-top: auto;
+        margin-bottom: auto;
+        width: 90%;
     }
 }

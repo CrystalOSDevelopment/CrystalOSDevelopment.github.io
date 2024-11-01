@@ -5,6 +5,30 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>CrystalOS Alpha</title>
     <link rel="stylesheet" href="index.css">
+    <style>
+        .sandwitchMenuItems {
+            display: none;
+            position: absolute;
+            top: 50px; /* Adjust this value based on your header height */
+            left: 0;
+            width: 100%;
+            background-color: white; /* Adjust the background color as needed */
+            box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2); /* Optional: Add shadow for better visibility */
+            display: flex;
+            justify-content: space-around; /* Distribute items evenly */
+            padding: 10px 0; /* Add padding to the top and bottom */
+        }
+        .sandwitchMenuItems a {
+            padding: 7px 7px; /* Add padding to the left and right */
+            text-align: center;
+            text-decoration: none;
+            color: black; /* Adjust the text color as needed */
+        }
+
+        .sandwitchMenu {
+            cursor: pointer;
+        }
+    </style>
 </head>
 <body>
     <header>
@@ -16,12 +40,12 @@
             <a href="#">Download</a>
             <a href="#">Contact</a>
         </nav>
-        <div class="sandwitchMenu">
+        <div id="sandwitchMenu" class="sandwitchMenu" onclick="toggleMenu()">
             <hr>
             <hr>
             <hr>
         </div>
-        <nav class="sandwitchMenuItems">
+        <nav id="sandwitchMenuItems" class="sandwitchMenuItems">
             <a href="#">Home</a>
             <a href="#">Features</a>
             <a href="#">Download</a>
@@ -29,10 +53,12 @@
         </nav>
     </header>
 
+
     <div class="content">
         <div class="Detail">
             <div>
                 <h2>CrystalOS Alpha</h2>
+                <img class="HideUnlessMobile" src="resources/image.png" alt="CrystalOS Preview">
                 <p class="Description">An operating system where design and productivity meets, leading to a much better user experience <a href="COSA.html">Learn more</a></p>
             </div>
             <img class="RightImage" src="resources/image.png" alt="CrystalOS Preview">
@@ -42,6 +68,7 @@
             <img class="LeftImage" src="resources/CosmosLogo.png" alt="CrystalOS Preview">
             <div>
                 <h2>COSMOS</h2>
+                <img class="HideUnlessMobile" src="resources/CosmosLogo.png" alt="CrystalOS Preview">
                 <p class="Description">Bring your ideas alive with COSMOS! Your dream operating system can become a reality. (C# knowledge is essential) <a href="COSMOS.html">Learn more</a></p>
             </div>
         </div>
@@ -49,15 +76,17 @@
         <div class="Detail">
             <div>
                 <h2>Archived projects</h2>
+                <img class="HideUnlessMobile" src="resources/Archived.png" alt="CrystalOS Preview" style="max-width: 300px;">
                 <p class="Description">If you want to get started, you may want to try out other people projects <a href="Archived.html">Learn more</a></p>
             </div>
             <img class="RightImage" src="resources/Archived.png" alt="CrystalOS Preview" style="max-width: 300px;">
         </div>
 
         <div class="Detail">
-            <img class="LeftImage" src="resources/image.png" alt="CrystalOS Preview">
+            <img class="LeftImage" src="resources/ProductivityMaxPro.png" alt="CrystalOS Preview">
             <div>
-                <h2>Planned/Other projects</h2>
+                <h2>Other projects</h2>
+                <img class="HideUnlessMobile" src="resources/ProductivityMaxPro.png" alt="CrystalOS Preview">
                 <p class="Description">Not interested in CrystalOS? No problem! There are plenty of other projects to choose from! <a href="Archived.html">Learn more</a></p>
             </div>
         </div>
@@ -85,5 +114,16 @@
         </div>
         <p>&copy; 2021-2024 Crystal Development.</p>
     </footer>
+
+    <script>
+        function toggleMenu() {
+            var menuItems = document.getElementById('sandwitchMenuItems');
+            if (menuItems.style.display === 'flex') {
+                menuItems.style.display = 'none';
+            } else {
+                menuItems.style.display = 'flex';
+            }
+        }
+    </script>
 </body>
 </html>
