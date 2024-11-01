@@ -1,6 +1,6 @@
 body {
     background-color: rgb(171, 180, 255);
-    padding-top: 10px;
+    padding-top: 30px;
     font-size: 18px; /* Increase base font size */
 }
 
@@ -51,9 +51,39 @@ header > nav > a:hover {
     display: none;
 }
 
+.RightImage{
+    float: right;
+    width: 50%;
+}
+
+.LeftImage{
+    width: 50%;
+    padding-right: 15px;
+}
+
+.Detail{
+    margin-top: 50px;
+    display: flex;
+    justify-content: space-between;
+    background-color: white;
+    padding: 10px;
+    border-radius: 6px;
+    box-shadow: 4px 8px 4px rgba(0, 0, 0, 0.2);
+}
+.Detail > div{
+    width: 100%;
+    text-align: center;
+}
+
+.Detail > div > p{
+    text-align: left;
+    padding: 5px;
+}
+
 /* Media Queries for Responsiveness */
 @media (max-width: 768px) {
     body {
+        padding-top: 40px;
         font-size: 16px; /* Adjust font size for smaller screens */
     }
 
@@ -74,6 +104,11 @@ header > nav > a:hover {
     
     h1 {
         display: none;
+    }
+
+    .Detail > div{
+        width: 50%;
+        text-align: center;
     }
 }
 
@@ -101,5 +136,16 @@ header > nav > a:hover {
     .sandwitchMenu > hr{
         border: none;
         border-top: 2px solid rgb(0, 0, 0);
+    }
+
+    .Detail > h2{
+        text-align: center;
+        padding-left: 7%;
+        padding-right: 15px;
+    }
+
+    .Detail > div{
+        width: 45%;
+        text-align: center;
     }
 }
