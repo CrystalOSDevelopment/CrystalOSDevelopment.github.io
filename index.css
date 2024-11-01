@@ -80,6 +80,48 @@ header > nav > a:hover {
     padding: 5px;
 }
 
+footer {
+    background-color: #232323;
+    color: white;
+    padding: 10px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    width: calc(100% - 20px);
+    margin-top: 20px;
+    position: fixed;
+    bottom: 0;
+    left: 0;
+}
+
+footer > div{
+    display: flex;
+    justify-content: space-between;
+}
+footer > p{
+    text-align: center;
+}
+
+footer > div > div{
+    margin-top: auto;
+    margin-bottom: auto;
+}
+
+footer > div > div > ul{
+    display: inline-block;
+    padding: 10px;
+    list-style: none;
+}
+
+footer > div > div > ul > li > a{
+    text-decoration: none;
+    color: white;
+}
+
+footer > div > div > ul > li > a:hover{
+    text-decoration: none;
+    color: rgb(248, 170, 248);
+    font-weight: bold;
+}
+
 /* Media Queries for Responsiveness */
 @media (max-width: 768px) {
     body {
@@ -109,6 +151,10 @@ header > nav > a:hover {
     .Detail > div{
         width: 50%;
         text-align: center;
+    }
+
+    .content {
+        min-height: calc(93vh); /* Adjust 60px to the footer's height */
     }
 }
 
@@ -147,5 +193,27 @@ header > nav > a:hover {
     .Detail > div{
         width: 45%;
         text-align: center;
+    }
+
+    .RightImage{
+        margin-top: auto;
+        margin-bottom: auto;
+        height: 50%;
+    }
+
+    .LeftImage{
+        margin-top: auto;
+        margin-bottom: auto;
+        height: 50%;
+    }
+
+    footer > div > div{
+        margin-top: auto;
+        margin-bottom: auto;
+        width: 90%;
+    }
+
+    .content {
+        min-height: calc(100vh + 130px); /* Adjust 60px to the footer's height */
     }
 }
