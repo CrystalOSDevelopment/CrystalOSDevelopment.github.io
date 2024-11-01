@@ -2,6 +2,9 @@ body {
     background-color: rgb(171, 180, 255);
     padding-top: 30px;
     font-size: 18px; /* Increase base font size */
+    padding-left: 20px;
+    padding-right: 20px;;
+    margin: 0;
 }
 
 h1 {
@@ -83,13 +86,14 @@ header > nav > a:hover {
 footer {
     background-color: #232323;
     color: white;
-    padding: 10px;
+    padding-bottom: 10px;
     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
     width: calc(100% - 20px);
     margin-top: 20px;
-    position: fixed;
+    margin-left: -20px;
+    margin-bottom: 0px;
     bottom: 0;
-    left: 0;
+    width: calc(100% + 40px);
 }
 
 footer > div{
@@ -103,6 +107,7 @@ footer > p{
 footer > div > div{
     margin-top: auto;
     margin-bottom: auto;
+    padding-right: 10px;
 }
 
 footer > div > div > ul{
@@ -112,6 +117,7 @@ footer > div > div > ul{
 }
 
 footer > div > div > ul > li > a{
+    padding-left: 20px;
     text-decoration: none;
     color: white;
 }
@@ -151,10 +157,6 @@ footer > div > div > ul > li > a:hover{
     .Detail > div{
         width: 50%;
         text-align: center;
-    }
-
-    .content {
-        min-height: calc(93vh); /* Adjust 60px to the footer's height */
     }
 }
 
@@ -211,9 +213,5 @@ footer > div > div > ul > li > a:hover{
         margin-top: auto;
         margin-bottom: auto;
         width: 90%;
-    }
-
-    .content {
-        min-height: calc(100vh + 130px); /* Adjust 60px to the footer's height */
     }
 }
