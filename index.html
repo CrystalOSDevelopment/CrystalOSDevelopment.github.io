@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>CrystalOS Alpha</title>
     <link rel="stylesheet" href="index.css">
+    <script src="index.js"></script>
     <style>
         .sandwitchMenuItems {
             display: none;
@@ -14,7 +15,7 @@
             width: 100%;
             background-color: white; /* Adjust the background color as needed */
             box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2); /* Optional: Add shadow for better visibility */
-            display: flex;
+            display: none;
             justify-content: space-around; /* Distribute items evenly */
             padding: 10px 0; /* Add padding to the top and bottom */
         }
@@ -114,16 +115,5 @@
         </div>
         <p>&copy; 2021-2024 Crystal Development.</p>
     </footer>
-
-    <script>
-        function toggleMenu() {
-            var menuItems = document.getElementById('sandwitchMenuItems');
-            if (menuItems.style.display === 'flex') {
-                menuItems.style.display = 'none';
-            } else {
-                menuItems.style.display = 'flex';
-            }
-        }
-    </script>
 </body>
 </html>
